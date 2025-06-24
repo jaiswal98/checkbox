@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QC Logs</title>
+</head>
+<body>
+    <h1>QC Logs</h1>
+    <a href="/">Go Back</a>
+    <table border="1">
+        <tr>
+            <th>QC ID</th>
+            <th>QC Name</th>
+            <th>Order ID</th>
+            <th>Open DateTime</th>
+            <th>Submit DateTime</th>
+        </tr>
+        {% for row in data %}
+        <tr>
+            <td>{{ row.qc_id }}</td>
+            <td>{{ row.qc_name }}</td>
+            <td>{{ row.order_id }}</td>
+            <td>{{ row.open_datetime }}</td>
+            <td>{{ row.submit_datetime }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="/">Go Back</a>
+</body>
+</html>
