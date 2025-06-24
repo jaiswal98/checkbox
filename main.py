@@ -25,7 +25,7 @@ def resource_path(relative_path):
 # ------------------------------------ MySQL DB Connection ------------------------------------
 def connect_db():
     return mysql.connector.connect(
-        host='localhost',#'192.168.29.172',
+        host='localhost',
         user='Test',
         password='root@123',
         database='doc_workflow'
